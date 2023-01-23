@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<div class = "flex">   
+  <div class="grid">    
+  <input data-input class="span-two">
+  <select data-input-type name="sort">
+    <option value="10">DEC</option>
+    <option value="2">BIN</option>
+    <option value="8">OCT</option>
+    <option value="16">HEX</option>
+  </select>
+  <button data-transfer>></button>
+  <button data-clear class="span-two">CLEAR</button>
+  <input data-output class="span-two" disabled></input>
+  <select data-output-type name="sort">
+    <option value="10">DEC</option>
+    <option value="2">BIN</option>
+    <option value="8">OCT</option>
+    <option value="16">HEX</option>
+  </select>
+  </div>
+
+  <div class="grid-1">    
+    <input data-input-log-1 class="span-two">
+    <select data-input-type-1 name="sort">
+      <option value="10">DEC</option>
+      <option value="2">BIN</option>
+      <option value="8">OCT</option>
+      <option value="16">HEX</option>
+    </select>
+    <input data-input-log-2 class="span-two">
+    <select data-input-type-2 name="sort">
+      <option value="10">DEC</option>
+      <option value="2">BIN</option>
+      <option value="8">OCT</option>
+      <option value="16">HEX</option>
+    </select>
+    <button data-and>AND</button>
+    <button data-or>OR</button>
+    <button data-xor>XOR</button>
+    <input data-output-log class="span-two" disabled></input>
+    <select data-output-type-log name="sort">
+      <option value="10">DEC</option>
+      <option value="2">BIN</option>
+      <option value="8">OCT</option>
+      <option value="16">HEX</option>
+    </select>
+    <button data-clear-log class="span-three">CLEAR</button>
+    </div>
+</div>
+
+<div class="file-input">
+  <div class="file-input__upload">
+    <input type="file" class="file-input__upload-input" id="upload"/>
+  </div>
+</div>
+
+<div class="file-input-calc">
+  <div class="file-input-calc__upload">
+    <input type="file" class="file-input-calc__upload-input" id="upload"/>
+  </div>
+</div>
+  
+</body>
+</html>

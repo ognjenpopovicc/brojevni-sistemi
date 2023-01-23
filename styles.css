@@ -1,0 +1,66 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #00AAFF, #00FF6C)
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: minmax(80px, auto) minmax(80px, auto) minmax(80px, auto);
+}
+
+.grid-1 {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: minmax(80px, auto) minmax(80px, auto) minmax(80px, auto) minmax(80px, auto) minmax(80px, auto);
+}
+
+.grid * {
+  font-size: 1.2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.grid-1 * {
+  font-size: 1.2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.grid > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.grid-1 > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+.span-three {
+  grid-column: span 3;
+}
+
+.flex {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 80px;
+}
